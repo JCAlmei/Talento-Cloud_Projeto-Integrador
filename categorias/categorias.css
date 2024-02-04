@@ -1,0 +1,237 @@
+/* REMOVENDO O ESPAÇAMENTO DE TODO O SITE ATRAVÉS DO COMANDO '*' */
+* {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    background-color: #000;
+    
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin-bottom: 12px;
+    background-color: #000;
+    margin-bottom:0%;
+  }
+  
+  /* header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    max-width:100%;
+
+} */
+
+nav {
+    font-size:small;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content:space-between;
+  list-style-type: none;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+@media (max-width: 700px) {
+  nav ul {
+    display: none;
+  }
+}
+
+li {
+  margin-right: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.dropdown {
+    position:relative;
+    display: inline-block;
+  }
+
+/* #imgMenu { 
+    margin-right: 70px;
+} */
+  
+  @media (min-width: 699px) {
+    .dropdown {
+      display: none;
+    }
+  }
+  
+  .dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 0%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(254, 253, 253);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  .btn-1 {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 10px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn-1:hover {opacity: 1}
+  
+  /* .btn-1 {
+    border: 2px solid red;
+      padding: 3px 5px;
+      border-radius: 10px;
+      background-color: red;
+      color: #fff;
+      margin-left: 12px;
+      font-size:  12px;
+  } */
+  
+  .btn-2 {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 10px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn-2:hover {opacity: 1}
+  
+  img {
+    margin-left: 10px;
+  }
+  
+  nav ul li {
+    list-style-type: none; /* Pontos que são criados, por padrão em listas */
+    margin-left: 16px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  main {
+    background-color: #9f9f9f;
+    display: flex;
+    justify-content:center;
+  }
+  
+  footer {
+    background-color: #000;
+  }
+
+  
+ 
+
+  #div1 {
+    position: relative;
+    /* left: 50%; */
+    top:50px;
+    
+  }
+
+  #div2 {
+    position: relative;
+    /* left: 50%; */
+    top:250px;
+  }
+
+  #img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition-duration: 0.4s;
+  }
+
+  /* #img1:hover {
+    background-color: #04AA6D;
+    color: white;
+  } */
+
+  #img2 {
+    position: absolute;
+    top: 0;
+    left: 10;
+    z-index: 2;
+  }
+
+  #img3 {
+    position: absolute;
+    top: 0;
+    left: 20;
+    z-index: 3;
+  }
+
+  #img4 {
+    position: absolute;
+    top: 0;
+    left: 30;
+    z-index: 4;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    z-index: 0;
+  }

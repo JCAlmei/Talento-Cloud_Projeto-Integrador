@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <!-- Link do nosso arquivo CSS -->
+    <link rel="stylesheet" href="/cadastro/cadastro3.css">
+    <script src="./cadastro/cadastro3.js" defer></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/img/Group 2 1LOGO.png" alt="BookFlix">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="categorias.html">Categorias</a>
+            </li>
+            <li>
+              <a href="">Minha Estante</a>
+            </li>
+            <li>
+              <a href="">Fale Conosco</a>
+            </li>
+            <li>
+              <a href="">Quem Somos</a>
+            </li>
+          </ul>
+
+          <div class="dropdown">
+            <img id="imgMenu" src="/cadastro/img/Menu (branco).png" alt="Cinque Terre">
+          <!-- <div class="dropdown">
+            <button class="dropbtn">Menu</button> -->
+            <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="#">Minha Estante</a>
+            <a href="fale_conosco.html">Fale Conosco</a>
+            <a href="#">Quem Somos</a>
+            </div>
+          </div>
+
+        </nav>
+
+    </header>
+
+<main>
+    <div class="container">
+        <!-- <div class="header">
+            <h2>Create Account</h2>
+        </div> -->
+        <form action="" class="form" id="form">
+
+          <h1>Create Account</h1>
+
+          <div class="form-control">
+
+            <label for="username" >Nome</label>
+            <input type="text" id="username">
+            <i class="img-success" ><img src="/cadastro/img/success-icon.svg" alt=""></i>
+            <i class="img-error" ><img src="/cadastro/img/error-icon.svg" alt=""></i>
+            <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <small>Error Message</small>
+
+          </div>
+
+          <div class="form-control">
+
+            <label for="tel">Telefone:</label>
+            <input class="input_1" type="tel" name="tel" id="tel">
+            <i class="img-success" ><img src="/cadastro/img/success-icon.svg" alt=""></i>
+            <i class="img-error" ><img src="/cadastro/img/error-icon.svg" alt=""></i>
+            <p id="tel-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <small>Error Message</small>
+
+          </div>
+
+          <div class="control">
+            <h3 id="p1">Nacionalidade</h3>
+          
+            <!-- O atributo [value] sobe para o navegador a opção escolhida -->
+            <input type="radio" name="nacionalidade" id="brasil" value="brasil">
+            <label for="brasil">Brasileiro(a)</label>
+
+            <input type="radio" name="nacionalidade" id="outro" value="outro">
+            <label for="outro">Estrangeiro(a)</label>
+          </div>
+
+          <div class="control">
+
+            <h3 id="p2">Para qual finalidade você irá usar o BookFlix?</h3>
+
+            <input type="checkbox" name="finalidade" id="Pessoal" value="Pessoal">
+            <label for="Pessoal">Pessoal</label>
+                
+            <input type="checkbox" name="finalidade" id="Estudo" class="ep" value="Estudo">
+            <label for="Estudo">Estudante</label>
+                
+            <input type="checkbox" name="finalidade" id="profissional" class="ep" value="profissional">
+            <label for="profissional">Profissional</label>
+
+          </div>
+
+          <div class="form-control" id="div5">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <i class="img-success" ><img src="/cadastro/img/success-icon.svg" alt=""></i>
+            <i class="img-error" ><img src="/cadastro/img/error-icon.svg" alt=""></i>
+            <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <small>Error Message</small>
+
+          </div>
+
+          <div class="form-control">
+
+            <label for="password">Senha</label>
+            <input type="password" id="password">
+            <i class="img-success" ><img src="/cadastro/img/success-icon.svg" alt=""></i>
+            <i class="img-error" ><img src="/cadastro/img/error-icon.svg" alt=""></i>
+            <p id="password-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <small>Error Message</small>
+
+          </div>
+
+          <div class="form-control">
+
+            <label for="password-two">Confirme sua senha</label>
+            <input type="password" id="password-two">
+            <i class="img-success" ><img src="/cadastro/img/success-icon.svg" alt=""></i>
+            <i class="img-error" ><img src="/cadastro/img/error-icon.svg" alt=""></i>
+            <p id="passwordTwo-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <small>Error Message</small>
+
+          </div>
+
+          <button type="submit" >ENVIAR</button>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>
