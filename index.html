@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
   <!-- Link do nosso arquivo CSS -->
   <link rel="stylesheet" href="/index/index.css">
+  <script src="/index/index.js"></script>
   <title>BookFlix</title>
 </head>
 
@@ -37,7 +38,7 @@
       </ul>
 
       <div class="dropdown">
-        <img id="imgMenu" src="assets/img/Menu (branco).png" alt="Cinque Terre">
+        <img id="imgMenu" src="/img/Menu (branco).png" alt="Cinque Terre">
       <!-- <div class="dropdown">
         <button class="dropbtn">Menu</button> -->
         <div class="dropdown-content">
@@ -60,19 +61,67 @@
       </a>
     </nav>
   </header>
+
   <main>
-    <h1>BookFlix</h1>
-    <h2>Como fazemos</h2>
-    <section>
-      <div>
-        <h3>TÍTULO</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta adipisci dignissimos repellendus officia accusamus! Aspernatur, enim, quisquam harum natus non rerum tempore, molestias alias consequatur repellendus possimus reprehenderit molestiae earum.</p>
-      </div>
-      <div>
-        <h3>Qualidade do curso</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam voluptatibus perspiciatis iusto expedita quisquam hic itaque nemo maiores voluptas ullam voluptates quaerat alias distinctio, unde illo at repudiandae eos.</p>
-      </div>
-    </section>
+    <h5 id="p2">TOP 5 - Mais Baixados</h5>
+    <div class="book-grid">
+      
+        <div class="book">
+          <div id="img1">
+          <img id="num1" src="/index/1.svg" alt="Número 1" width="50" height="50">
+          <img id="livro1" src="/index/img/livro_1.jpg" alt="Capa do livro" width="100" height="150">
+          </div>
+          <div id="sp1">
+            <a href="javascript:void(0)" onclick="Avaliar(1)">
+              <img src="/index/img/star0.png" id="s1"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(2)">
+              <img src="/index/img/star0.png" id="s2"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(3)">
+              <img src="/index/img/star0.png" id="s3"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(4)">
+              <img src="/index/img/star0.png" id="s4"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(5)">
+              <img src="/index/img/star0.png" id="s5"></a>
+              <p id="pT">Esplendor da Honra</p>
+              <p id="pA"> Julie Garwood </p>
+              <!-- <p id="rating">0</p> -->
+          </div>
+        </div>
+
+        <div class="book">
+          <div id="img1">
+            <img id="num1" src="/img/numero2.svg" alt="Número 1" width="50" height="50">
+            <img id="livro1" src="/img/livro_2.jpeg" alt="Capa do livro" width="100" height="150">
+            </div>
+            <div id="sp1">
+              <a href="javascript:void(0)" onclick="Avaliar2(1)">
+              <img src="/index/img/star0.png" id="b1"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar2(2)">
+              <img src="/index/img/star0.png" id="b2"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar2(3)">
+              <img src="/index/img/star0.png" id="b3"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar2(4)">
+              <img src="/index/img/star0.png" id="b4"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar2(5)">
+              <img src="/index/img/star0.png" id="b5"></a>
+              <p id="pT">Esplendor da Honra</p>
+              <p id="pA"> Julie Garwood </p>
+            <p id="pT">A menina que colecionava borboletas</p>
+            <p id="pA"> Julie Garwood </p>
+            </div>
+        </div>
+        <div class="book">Taveel Wood: Entre Corvos e Anjos</div>
+        <div class="book">Revolucionária: A Dignidade Move o Mundo</div>
+        <div class="book">A História de Nós Dois</div>
+    </div>
   </main>
   <footer>
 
