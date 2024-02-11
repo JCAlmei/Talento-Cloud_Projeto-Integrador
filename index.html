@@ -51,6 +51,14 @@
       </div>
       
     </nav>
+
+    <nav>
+    <form action="">
+      <input type="search" name="q" placeholder="Pesquisar...">
+      <input type="submit" value="Ir">
+    </form>
+    </nav>
+
     <nav>
       <a href="cadastro3.html">
       <button class="btn-1">Cadastro</></button>
@@ -63,65 +71,366 @@
   </header>
 
   <main>
-    <h5 id="p2">TOP 5 - Mais Baixados</h5>
+
+    <!-- TOP 5 -MAIS BAIXADOS -->
+
+    <div class="top-5">
+      <button id="btn"><img id="imgh5" src="/img/award.svg" alt="Número 1" width="19" height="19">
+        <h4 id="p2">TOP 5 - Mais Baixados</h4></button>
+    </div>
+
     <div class="book-grid">
-      
-        <div class="book">
+
+        <div class="book" id="1">
           <div id="img1">
-          <img id="num1" src="/index/1.svg" alt="Número 1" width="50" height="50">
-          <img id="livro1" src="/index/img/livro_1.jpg" alt="Capa do livro" width="100" height="150">
+          <img id="num1" src="/index/img/1.svg" alt="Número 1" width="45" height="45">
+          <img id="livro1" src="/index/img/livro_1.jpg" alt="Capa do livro" width="130" height="180">
           </div>
           <div id="sp1">
             <a href="javascript:void(0)" onclick="Avaliar(1)">
-              <img src="/index/img/star0.png" id="s1"></a>
+              <img src="/index/img/star0.png" id="s1" width="12" height="12"></a>
               
               <a href="javascript:void(0)" onclick="Avaliar(2)">
-              <img src="/index/img/star0.png" id="s2"></a>
+              <img src="/index/img/star0.png" id="s2" width="12" height="12"></a>
               
               <a href="javascript:void(0)" onclick="Avaliar(3)">
-              <img src="/index/img/star0.png" id="s3"></a>
+              <img src="/index/img/star0.png" id="s3" width="12" height="12"></a>
               
               <a href="javascript:void(0)" onclick="Avaliar(4)">
-              <img src="/index/img/star0.png" id="s4"></a>
+              <img src="/index/img/star0.png" id="s4" width="12" height="12"></a>
               
               <a href="javascript:void(0)" onclick="Avaliar(5)">
-              <img src="/index/img/star0.png" id="s5"></a>
+              <img src="/index/img/star0.png" id="s5" width="12" height="12"></a>
               <p id="pT">Esplendor da Honra</p>
               <p id="pA"> Julie Garwood </p>
               <!-- <p id="rating">0</p> -->
           </div>
         </div>
 
-        <div class="book">
+        <div class="book" id="2">
           <div id="img1">
-            <img id="num1" src="/img/numero2.svg" alt="Número 1" width="50" height="50">
-            <img id="livro1" src="/img/livro_2.jpeg" alt="Capa do livro" width="100" height="150">
+          <img id="num1" src="/index/img/numero2.svg" alt="Número 1" width="45" height="45">
+          <img id="livro1" src="/img/livro_2.jpeg" alt="Capa do livro" width="130" height="180">
+          </div>
+          <div id="sp1">
+            <a href="javascript:void(0)" onclick="Avaliar2(1)">
+              <img src="/index/img/star0.png" id="b1" width="12" height="12"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar2(2)">
+              <img src="/index/img/star0.png" id="b2" width="12" height="12"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar2(3)">
+              <img src="/index/img/star0.png" id="b3" width="12" height="12"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar2(4)">
+              <img src="/index/img/star0.png" id="b4" width="12" height="12"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar2(5)">
+              <img src="/index/img/star0.png" id="b5" width="12" height="12"></a>
+              <p id="pT">A menina que colecionava <br> borboletas <br></p>
+              <p id="pA">Bruna Vieira</p>
+              <!-- <p id="rating">0</p> -->
+          </div>
+        </div>
+
+        <div class="book" id="3">
+          <div id="img1">
+            <img id="num1" src="/index/img/numero3.svg" alt="Número 1" width="45" height="45">
+            <img id="livro1" src="/img/livro_3.jpg" alt="Capa do livro" width="130" height="180">
             </div>
             <div id="sp1">
-              <a href="javascript:void(0)" onclick="Avaliar2(1)">
-              <img src="/index/img/star0.png" id="b1"></a>
+              <a href="javascript:void(0)" onclick="Avaliar3(1)">
+              <img src="/index/img/star0.png" id="c1" width="12" height="12"></a>
                 
-              <a href="javascript:void(0)" onclick="Avaliar2(2)">
-              <img src="/index/img/star0.png" id="b2"></a>
+              <a href="javascript:void(0)" onclick="Avaliar3(2)">
+              <img src="/index/img/star0.png" id="c2" width="12" height="12"></a>
                 
-              <a href="javascript:void(0)" onclick="Avaliar2(3)">
-              <img src="/index/img/star0.png" id="b3"></a>
+              <a href="javascript:void(0)" onclick="Avaliar3(3)">
+              <img src="/index/img/star0.png" id="c3" width="12" height="12"></a>
                 
-              <a href="javascript:void(0)" onclick="Avaliar2(4)">
-              <img src="/index/img/star0.png" id="b4"></a>
+              <a href="javascript:void(0)" onclick="Avaliar3(4)">
+              <img src="/index/img/star0.png" id="c4" width="12" height="12"></a>
                 
-              <a href="javascript:void(0)" onclick="Avaliar2(5)">
-              <img src="/index/img/star0.png" id="b5"></a>
-              <p id="pT">Esplendor da Honra</p>
-              <p id="pA"> Julie Garwood </p>
-            <p id="pT">A menina que colecionava borboletas</p>
-            <p id="pA"> Julie Garwood </p>
+              <a href="javascript:void(0)" onclick="Avaliar3(5)">
+              <img src="/index/img/star0.png" id="c5" width="12" height="12"></a>
+          
+              <p id="pT">Como eu era antes de você</p>
+              <p id="pA"> Jojo Moye </p>
             </div>
         </div>
-        <div class="book">Taveel Wood: Entre Corvos e Anjos</div>
-        <div class="book">Revolucionária: A Dignidade Move o Mundo</div>
-        <div class="book">A História de Nós Dois</div>
+
+        <div class="book" id="4">
+          <div id="img1">
+            <img id="num1" src="/index/img/numero4.svg" alt="Número 1" width="45" height="45">
+            <img id="livro1" src="/img/livro_4.webp" alt="Capa do livro" width="130" height="180">
+            </div>
+            <div id="sp1">
+              <a href="javascript:void(0)" onclick="Avaliar4(1)">
+              <img src="/index/img/star0.png" id="d1" width="12" height="12"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar4(2)">
+              <img src="/index/img/star0.png" id="d2" width="12" height="12"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar4(3)">
+              <img src="/index/img/star0.png" id="d3" width="12" height="12"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar4(4)">
+              <img src="/index/img/star0.png" id="d4" width="12" height="12"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar4(5)">
+              <img src="/index/img/star0.png" id="d5" width="12" height="12"></a>
+          
+              <p id="pT">Novelas nada exemplares</p>
+              <p id="pA">José Olympio</p>
+            </div>
+        </div>
+
+        <div class="book" id="5">
+          <div id="img1">
+            <img id="num1" src="/index/img/numero5.svg" alt="Número 1" width="45" height="45">
+            <img id="livro1" src="/img/livro_5.jpeg" alt="Capa do livro" width="130" height="180">
+          </div>
+          <div id="sp1">
+            <a href="javascript:void(0)" onclick="Avaliar5(1)">
+            <img src="/index/img/star0.png" id="e1" width="12" height="12"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar5(2)">
+            <img src="/index/img/star0.png" id="e2" width="12" height="12"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar5(3)">
+            <img src="/index/img/star0.png" id="e3" width="12" height="12"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar5(4)">
+            <img src="/index/img/star0.png" id="e4" width="12" height="12"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar5(5)">
+            <img src="/index/img/star0.png" id="e5" width="12" height="12"></a>
+        
+            <p id="pT">BRILHO - <br>Em busca de um novo mundo <br></p>
+            <p id="pA"> Amy kathlenn Ryan </p>
+          </div>
+
+    
+        </div>
+        
     </div>
+
+
+    <!-- PUBLICAÇÕES RECENTES -->
+
+    <div class="pr">
+      <button id="btn"><img id="imgh5" src="/img/fig. livro.svg" alt="Número 1" width="17" height="17">
+      <h4 id="p2">Publicações Recentes</h4></button>
+    </div>
+
+    <div class="book-grid2" id="1">
+      
+      <div class="book" id="6">
+        <div id="img1">
+        <img class="livro" id="livro1" src="/img/philip.svg" alt="Capa do livro" width="140" height="190">
+        </div>
+        <div>
+          <a href="javascript:void(0)" onclick="Avaliar6(1)">
+          <img class="estrela" src="/index/img/star0.png" id="f1" width="10" height="10"></a>
+            
+          <a href="javascript:void(0)" onclick="Avaliar6(2)">
+          <img class="estrela" src="/index/img/star0.png" id="f2" width="10" height="10"></a>
+            
+          <a href="javascript:void(0)" onclick="Avaliar6(3)">
+          <img class="estrela" src="/index/img/star0.png" id="f3" width="10" height="10"></a>
+            
+          <a href="javascript:void(0)" onclick="Avaliar6(4)">
+          <img class="estrela" src="/index/img/star0.png" id="f4" width="10" height="10"></a>
+            
+          <a href="javascript:void(0)" onclick="Avaliar6(5)">
+          <img class="estrela" src="/index/img/star0.png" id="f5" width="10" height="10"></a>
+          <p id="pT2">Marés Sombrias</p>
+          <p id="pA2">Phillippa Gregory</p>
+        </div>
+      </div>
+
+      <div class="book" id="7">
+        <div id="img1">
+        <img id="livro1" src="/img/ciencias-ocultas.svg" alt="Capa do livro" width="140" height="190">
+        </div>
+        <div>
+          <a href="javascript:void(0)" onclick="Avaliar7(1)">
+            <img src="/index/img/star0.png" id="g1" width="10" height="10"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar7(2)">
+            <img src="/index/img/star0.png" id="g2" width="10" height="10"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar7(3)">
+            <img src="/index/img/star0.png" id="g3" width="10" height="10"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar7(4)">
+            <img src="/index/img/star0.png" id="g4" width="10" height="10"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar7(5)">
+            <img src="/index/img/star0.png" id="g5" width="10" height="10"></a>
+            <p id="pT2">Ciências Ocultas</p>
+            <p id="pA2">Papus</p>
+        </div>
+      </div>
+
+      <div class="book" id="8">
+        <div id="img1">
+          <img id="livro1" src="/img/ascencao-e-queda.svg" alt="Capa do livro" width="140" height="190">
+          </div>
+          <div>
+            <a href="javascript:void(0)" onclick="Avaliar8(1)">
+            <img src="/index/img/star0.png" id="h1" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(2)">
+            <img src="/index/img/star0.png" id="h2" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(3)">
+            <img src="/index/img/star0.png" id="h3" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(4)">
+            <img src="/index/img/star0.png" id="h4" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(5)">
+            <img src="/index/img/star0.png" id="h5" width="10" height="10"></a>
+        
+            <p id="pT2">Ascenção e Queda</p>
+            <p id="pA2"> Paul Strathern </p>
+          </div>
+      </div>
+
+      <div class="book" id="9">
+        <div id="img1">
+          <img id="livro1" src="/img/elvis.svg" alt="Capa do livro" width="140" height="190">
+          </div>
+          <div>
+            <a href="javascript:void(0)" onclick="Avaliar8(1)">
+            <img src="/index/img/star0.png" id="h1" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(2)">
+            <img src="/index/img/star0.png" id="h2" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(3)">
+            <img src="/index/img/star0.png" id="h3" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(4)">
+            <img src="/index/img/star0.png" id="h4" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(5)">
+            <img src="/index/img/star0.png" id="h5" width="10" height="10"></a>
+        
+            <p id="pT2">Elvis - Amor Descuidado</p>
+            <p id="pA2"> Peter Guralnick </p>
+          </div>
+      </div>
+
+
+      
+    </div>
+
+    <div class="book-grid2" id="2">
+      
+      <div class="book" id="10">
+        <div id="img1">
+        <img class="livro" id="livro1" src="/img/coach-de-fracassos.svg" alt="Capa do livro" width="140" height="190">
+        </div>
+        <div>
+          <a href="javascript:void(0)" onclick="Avaliar6(1)">
+          <img class="estrela" src="/index/img/star0.png" id="f1" width="10" height="10"></a>
+            
+          <a href="javascript:void(0)" onclick="Avaliar6(2)">
+          <img class="estrela" src="/index/img/star0.png" id="f2" width="10" height="10"></a>
+            
+          <a href="javascript:void(0)" onclick="Avaliar6(3)">
+          <img class="estrela" src="/index/img/star0.png" id="f3" width="10" height="10"></a>
+            
+          <a href="javascript:void(0)" onclick="Avaliar6(4)">
+          <img class="estrela" src="/index/img/star0.png" id="f4" width="10" height="10"></a>
+            
+          <a href="javascript:void(0)" onclick="Avaliar6(5)">
+          <img class="estrela" src="/index/img/star0.png" id="f5" width="10" height="10"></a>
+          <p id="pT2">Coach de Fracassos</p>
+          <p id="pA2">Júlio Peixoto</p>
+        </div>
+      </div>
+
+      <div class="book" id="11">
+        <div id="img1">
+        <img id="livro1" src="/img/o-ultimo-papa.svg" alt="Capa do livro" width="140" height="190">
+        </div>
+        <div>
+          <a href="javascript:void(0)" onclick="Avaliar7(1)">
+            <img src="/index/img/star0.png" id="g1" width="10" height="10"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar7(2)">
+            <img src="/index/img/star0.png" id="g2" width="10" height="10"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar7(3)">
+            <img src="/index/img/star0.png" id="g3" width="10" height="10"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar7(4)">
+            <img src="/index/img/star0.png" id="g4" width="10" height="10"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar7(5)">
+            <img src="/index/img/star0.png" id="g5" width="10" height="10"></a>
+            <p id="pT2">O Último Papa</p>
+            <p id="pA2">Malachi Martin</p>
+        </div>
+      </div>
+
+      <div class="book" id="12">
+        <div id="img1">
+          <img id="livro1" src="/img/ascencao-e-queda.svg" alt="Capa do livro" width="140" height="190">
+          </div>
+          <div>
+            <a href="javascript:void(0)" onclick="Avaliar8(1)">
+            <img src="/index/img/star0.png" id="h1" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(2)">
+            <img src="/index/img/star0.png" id="h2" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(3)">
+            <img src="/index/img/star0.png" id="h3" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(4)">
+            <img src="/index/img/star0.png" id="h4" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(5)">
+            <img src="/index/img/star0.png" id="h5" width="10" height="10"></a>
+        
+            <p id="pT2">Ascenção e Queda</p>
+            <p id="pA2"> Paul Strathern </p>
+          </div>
+      </div>
+
+      <div class="book" id="13">
+        <div id="img1">
+          <img id="livro1" src="/img/setembro-vermelho.svg" alt="Capa do livro" width="140" height="190">
+          </div>
+          <div>
+            <a href="javascript:void(0)" onclick="Avaliar8(1)">
+            <img src="/index/img/star0.png" id="h1" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(2)">
+            <img src="/index/img/star0.png" id="h2" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(3)">
+            <img src="/index/img/star0.png" id="h3" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(4)">
+            <img src="/index/img/star0.png" id="h4" width="10" height="10"></a>
+              
+            <a href="javascript:void(0)" onclick="Avaliar8(5)">
+            <img src="/index/img/star0.png" id="h5" width="10" height="10"></a>
+        
+            <p id="pT2">Setembro Vermelho</p>
+            <p id="pA2">Olivier Besancenot e Michael Löwy</p>
+          </div>
+      </div>
+
+
+      
+    </div>
+
   </main>
   <footer>
 
