@@ -11,82 +11,142 @@
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
   <!-- Link do nosso arquivo CSS -->
   <link rel="stylesheet" href="/categorias/categorias.css">
+  <script src="/index/index.js"></script>
   <title>BookFlix</title>
 </head>
 
 <body>
-
-    <header>
-      <img src="/img/Group 2 1LOGO.svg" alt="BookFlix">
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="categorias.html">Categorias</a>
-          </li>
-          <li>
-            <a href="">Minha Estante</a>
-          </li>
-          <li>
-            <a href="fale_conosco.html">Fale Conosco</a>
-          </li>
-          <li>
-            <a href="">Quem Somos</a>
-          </li>
-        </ul>
-
-        <div class="dropdown">
-          <img id="imgMenu" src="/cadastro/img/Menu (branco).png" alt="Cinque Terre">
-        <!-- <div class="dropdown">
-          <button class="dropbtn">Menu</button> -->
-          <div class="dropdown-content">
+  <header>
+    <img id="logo" src="/img/Group 2 1LOGO.svg" alt="BookFlix">
+    <nav>
+      <ul>
+        <li>
           <a href="index.html">Home</a>
+        </li>
+        <li>
           <a href="categorias.html">Categorias</a>
-          <a href="#">Minha Estante</a>
+        </li>
+        <li>
+          <a href="">Minha Estante</a>
+        </li>
+        <li>
           <a href="fale_conosco.html">Fale Conosco</a>
-          <a href="#">Quem Somos</a>
-          </div>
+        </li>
+        <li>
+          <a href="">Quem Somos</a>
+        </li>
+      </ul>
+
+      <nav>
+        <form action="">
+          <input type="search" name="q" placeholder="Pesquisar...">
+          <input type="submit" value="Buscar" >
+        </form>
+      </nav>
+
+      <div class="dropdown">
+        <img id="imgMenu" src="/img/Menu (branco).png" alt="Cinque Terre">
+      <!-- <div class="dropdown">
+        <button class="dropbtn">Menu</button> -->
+        <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="#">Minha Estante</a>
+        <a href="fale_conosco.html">Fale Conosco</a>
+        <a href="#">Quem Somos</a>
+        </div>
+      </div>
+
+      
+      
+    </nav>
+
+    <nav>
+      <a href="cadastro3.html">
+      <button class="btn-1">Cadastro</></button>
+      </a>
+      
+      <a href="/login2.html">
+      <button class="btn-2">Login</button>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    
+      <!-- <div id="div0">
+        <ul class="ul2">
+          <li class="l2" ><h4 class="a3" id="active" href="">CATEGORIAS</h4></li>
+          <li class="l2"><a class="a3" href="">News</a></li>
+          <li class="l2"><a class="a3" href="">Contact</a></li>
+          <li class="l2"><a class="a3" href="">About</a></li>
+        </ul>
+      </div> -->
+
+      <div class="dropdown2">
+        <button class="dropbtn2">Menu Categorias</button>
+        <div class="dropdown-content2">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        </div>
+      </div>
+    
+      <div id="grid">
+        <div class="dv" id="div1">
+          <img class="img-dv1" id="img1" src="/img/como-nao-conquistar-seu-melhor-amigo.svg" >
+          <img class="img-dv1" id="img2" src="/img/a-penetra.svg" >
+          <img class="img-dv1" id="img3" src="/img/se-ela-fosse-minha.svg" >
+          <img class="img-dv1" id="img4" src="/img/apenas-amigos.svg" >
+          <h2>Romance</h2>
         </div>
 
-      </nav>
-    </header>
+        <div class="dv" id="div2">
+          <img class="img-dv1" id="img1" src="/img/macbeth.svg" >
+          <img class="img-dv1" id="img2" src="/img/sobreviva-a-noite.svg" >
+          <img class="img-dv1" id="img3" src="/img/a-velha-loja-de-curiosidades.svg" >
+          <img class="img-dv1" id="img4" src="/img/brava-serena.svg" >
+          <h2>Ficção</h2>
+        </div>
 
-<main>
+        <div class="dv" id="div3">
+          <img class="img-dv1" id="img1" src="/img/79-filmes-para-assistir-enquanto-dirige.svg" >
+          <img class="img-dv1" id="img2" src="/img/dias-gomes_o-bem-amado.svg" >
+          <img class="img-dv1" id="img3" src="/img/minha-mae-e-uma-peca_paulo-gustavo.svg" >
+          <img class="img-dv1" id="img4" src="/img/thomas-man_sua-alteza-real.svg" >
+          <h2>Humor</h2>
+        </div>
+
+        <div class="dv" id="div4">
+          <img class="img-dv1" id="img1" src="/img/realidades-alternativas.svg" >
+          <img class="img-dv1" id="img2" src="/img/contos-de-terror-de-misterio-e-de-morte.svg" >
+          <img class="img-dv1" id="img3" src="/img/amigo-imaginario.svg" >
+          <img class="img-dv1" id="img4" src="/img/o-psicopata-americano.svg" >
+          <h2>Terror e Suspense</h2>
+        </div>
+
+        <div class="dv" id="div5">
+          <img class="img-dv1" id="img1" src="/img/tempo.svg" >
+          <img class="img-dv1" id="img2" src="/img/a-ciencia-tem-todas-as-respostas.svg" >
+          <img class="img-dv1" id="img3" src="/img/o-grande-livro-de-ciencias.svg" >
+          <img class="img-dv1" id="img4" src="/img/einstein.svg" >
+          <h2>Ciências</h2>
+        </div>
+
+        <div class="dv" id="div6">
+          <img class="img-dv1" id="img1" src="/img/o-coach-de-um-trilhao-de-dolares.svg" >
+          <img class="img-dv1" id="img2" src="/img/as-7-leis-imutaveis-do-sucesso.svg" >
+          <img class="img-dv1" id="img3" src="/img/produtividade-kaizen.svg" >
+          <img class="img-dv1" id="img4" src="/img/pai-rico-pai-pobre.svg" >
+          <h2>Administração e Economia</h2>
+        </div>
+      </div>
+
+  </main>
   
-  
-    <!-- <div id="overlay">  
-      <img id="img1" src="/categorias/img/livro_1.jpg" width="100" height="150">
-    </div>
-    <div id="overlay2">  
-      <img id="img2" src="/categorias/img/livro_2.jpeg"width="100" height="150">
-    </div>
-    <div>  
-      <img id="img3" src="/categorias/img/livro_3.jpg" width="100" height="150">
-    </div>  
-    <div>  
-      <img id="img4" src="/categorias/img/livro_6.jpeg" width="100" height="150">
-    </div> -->
-
-    <p id="div1">
-      <img id="img1" src="/categorias/img/livro_1.jpg" style="position: absolute; top: 0; left: 0; z-index: 4;" width="100" height="150">
-      <img id="img2" src="/categorias/img/livro_2.jpeg" style="position: absolute; top: 0; left: 50px; z-index: 3;" width="100" height="150">
-      <img id="img3" src="/categorias/img/livro_3.jpg" style="position: absolute; top: 0; left: 100px; z-index: 2;" width="100" height="150">
-      <img id="img4" src="/categorias/img/livro_6.jpeg" style="position: absolute; top: 0; left: 150px; z-index: 1;" width="100" height="150">
-    </p>
-
-    <p id="div2">
-      <img id="img1" src="/categorias/img/livro_1.jpg" style="position: absolute; top: 0; left: 0; z-index: 4;" width="100" height="150">
-      <img id="img2" src="/categorias/img/livro_2.jpeg" style="position: absolute; top: 0; left: 50px; z-index: 3;" width="100" height="150">
-      <img id="img3" src="/categorias/img/livro_3.jpg" style="position: absolute; top: 0; left: 100px; z-index: 2;" width="100" height="150">
-      <img id="img4" src="/categorias/img/livro_6.jpeg" style="position: absolute; top: 0; left: 150px; z-index: 1;" width="100" height="150">
-    </p>
-    <p>Romance</p>
-    
-
-</main>
+  <footer>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam omnis velit eveniet perferendis facere ullam. Eum eveniet temporibus fuga quam blanditiis quos modi dolor possimus, corrupti, perferendis autem fugiat!</p>
+  </footer>
 
 </body>
-
 </html>

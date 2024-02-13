@@ -14,12 +14,30 @@
     background-color: #000;
     margin-bottom:0%;
   }
+
+  @media (max-width: 860px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+
+@media (max-width: 860px) {
+  #logo {
+    margin-bottom: 30px;
+  }
+}
   
   nav {
     /* Podemos usar as propriedades abaixo para alinhas todos os elementos filhos do elemento 'nav' no centro do eixo */
     display: flex;
     align-items: center;
     font-size: small;
+  }
+
+  @media (max-width: 860px) {
+    nav {
+      flex-wrap: wrap-reverse;
+    }
   }
 
   /* Estilizando a barra de pesquisa */
@@ -29,7 +47,8 @@ input[type="search"] {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 5px;
-  color:#fff;
+  color:#000000;
+  background-color: #ffffff;
 }
 
 /* Estilizando o botão de envio */
@@ -46,6 +65,19 @@ input[type="submit"] {
 /* Mudando a cor de fundo do botão ao passar o mouse */
 input[type="submit"]:hover {
   background-color: #545454;
+}
+
+
+
+/* @media (max-width: 860px) {
+  input {
+    margin: 0;
+  }
+} */
+
+form {
+  display:flex;
+  justify-items: center;
 }
 
   ul {
@@ -85,14 +117,18 @@ input[type="submit"]:hover {
 
   .dropdown {
     position:relative;
-    display: inline-block;
+    display: flex;
+    margin-left: 30px;
   }
   
   @media (min-width: 859px) {
     .dropdown {
       display: none;
+      margin-left: 0;
     }
   }
+
+
   
   .dropbtn {
     background-color: #000000;
@@ -293,6 +329,12 @@ input[type="submit"]:hover {
   margin-top: 50px;
 }
 
+@media (max-width: 860px) {
+  .top-5 {
+    margin-top: 20px;
+  }
+}
+
 .pr {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -316,3 +358,4 @@ input[type="submit"]:hover {
 h4 {
   padding-bottom: 3px;
 }
+
