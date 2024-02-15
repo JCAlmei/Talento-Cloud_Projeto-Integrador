@@ -4,43 +4,29 @@
     margin: 0;
     background-color: #000;
     
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    margin-bottom: 12px;
-    background-color: #000;
-    margin-bottom:0%;
-  }
-
-  @media (max-width: 860px) {
-    header {
-      flex-wrap: wrap;
-    }
-  }
-
-@media (max-width: 860px) {
-  #logo {
-    margin-bottom: 30px;
-  }
 }
-  
-  nav {
-    /* Podemos usar as propriedades abaixo para alinhas todos os elementos filhos do elemento 'nav' no centro do eixo */
-    display: flex;
-    align-items: center;
-    font-size: small;
-  }
 
-  @media (max-width: 860px) {
-    nav {
-      flex-wrap: wrap-reverse;
-    }
-  }
+/*** HEADER ***/
 
-  /* Estilizando a barra de pesquisa */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  margin: 30px;
+  background-color: #000;
+}
+
+#logo {
+  width: 200px;
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+
 input[type="search"] {
   width: 200px;
   height: 30px;
@@ -51,7 +37,6 @@ input[type="search"] {
   background-color: #ffffff;
 }
 
-/* Estilizando o botão de envio */
 input[type="submit"] {
   height: 30px;
   border: none;
@@ -62,49 +47,149 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* Mudando a cor de fundo do botão ao passar o mouse */
 input[type="submit"]:hover {
   background-color: #545454;
 }
-
-
-
-/* @media (max-width: 860px) {
-  input {
-    margin: 0;
-  }
-} */
 
 form {
   display:flex;
   justify-items: center;
 }
 
-  ul {
-    display: flex;
-    margin-right: 16px;
-    /* Podemos aplicar as duas propriedades abaixo para alinhas os elementos 'li' no centro do eixo */
-    height: 100%;
+ul {
+  display: flex;
+  margin-right: 20px;
+  height: 100%;
+  align-items: center;
+}
+
+nav ul li  {
+  list-style-type: none; /* Pontos que são criados, por padrão em listas */
+  margin-left: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 860px) {
+  header {
+    flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
   }
 
-  @media (max-width: 860px) {
-    ul{
-      display: none;
-    }
+  #logo {
+    margin-bottom: 30px;
   }
 
-  
+  nav {
+    flex-wrap: wrap-reverse;
+  }
 
-  nav ul li  {
-    list-style-type: none; /* Pontos que são criados, por padrão em listas */
-    margin-left: 16px;
+  ul{
+    display: none;
   }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
+
+}
+
+.dropdown {
+  position:relative;
+  display: flex;
+  margin-left: 30px;
+}
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 0%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #8d8d8d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #808080}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+@media (min-width: 859px) {
+  .dropdown {
+    display: none;
+    margin-left: 0;
   }
+}
+
+.btn-1 {
+  background-color: #ff0000; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-1:hover {
+  background-color: #c80000;
+}
+
+.btn-2 {
+  background-color: #ff0000; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-2:hover {
+  background-color: #c80000;
+}
+
+@media (max-width: 970px) {
+  .btn-2 {
+    display: none;
+  }
+
+  .btn-1 {
+    display: none;
+  }
+} 
+
+/****************************/
+
+/****** CONTEÚDO ******/
   
   main {
     margin-top: 30px;
@@ -114,136 +199,7 @@ form {
     background-color: #000;
   }
 
-
-  .dropdown {
-    position:relative;
-    display: flex;
-    margin-left: 30px;
-  }
   
-  @media (min-width: 859px) {
-    .dropdown {
-      display: none;
-      margin-left: 0;
-    }
-  }
-
-
-  
-  .dropbtn {
-    background-color: #000000;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin: 0%;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: #8d8d8d;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: rgb(255, 255, 255);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {background-color: #808080}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
-  
-  /* .btn-1 {
-    background-color: #f4511e;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 10px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .btn-1:hover {opacity: 1}
-  
-  .btn-2 {
-    background-color: #f4511e;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 10px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .btn-2:hover {opacity: 1} */
-
-  .btn-1 {
-    background-color: #ff0000; /* Green */
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    font-size: 10px;
-    cursor: pointer;
-    
-  }
-
-  .btn-1:hover {
-    background-color: #c80000;
-  }
-
-  @media (max-width: 970px) {
-    .btn-1 {
-      display: none;
-    }
-  } 
-
-  .btn-2 {
-    background-color: #ff0000; /* Green */
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    font-size: 10px;
-    cursor: pointer;
-    margin-left: 5px;
-  }
-
-  .btn-2:hover {
-    background-color: #c80000;
-  }
-
-  @media (max-width: 970px) {
-    .btn-2 {
-      display: none;
-    }
-  }
-
 .book-grid {
   display: flex;
   flex-wrap: wrap;
@@ -266,6 +222,10 @@ form {
   text-align: center;
 }
 
+.est {
+  display: flex;
+  justify-content: center;
+}
 
 #pT {
   font-size:medium;
@@ -313,9 +273,7 @@ form {
   text-align: center;
   text-decoration: none;
   display: flex;
-  
   font-size: 16px;
-  
 }
 
 #imgh5 {
@@ -344,16 +302,6 @@ form {
   width: 5;
   height: 5;
 }
-
-/* #livro1 {
-  width: 1;
-  height: 1;
-} */
-
-/* .livro {
-  width: 150;
-  height: 250;
-} */
 
 h4 {
   padding-bottom: 3px;

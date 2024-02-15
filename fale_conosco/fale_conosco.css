@@ -90,40 +90,30 @@ header {
   }
   
   .btn-1 {
-    background-color: #f4511e;
+    background-color: #ff0000; /* Green */
     border: none;
     color: white;
     padding: 5px 10px;
     text-align: center;
-    font-size: 10px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    font-size: 16px;
     cursor: pointer;
   }
   
   .btn-1:hover {opacity: 1}
   
-  /* .btn-1 {
-    border: 2px solid red;
-      padding: 3px 5px;
-      border-radius: 10px;
-      background-color: red;
-      color: #fff;
-      margin-left: 12px;
-      font-size:  12px;
-  } */
-  
   .btn-2 {
-    border: 2px solid red;
-      padding: 3px 5px;
-      border-radius: 10px;
-      background-color: red;
-      color: #fff;
-      margin-left: 12px;
-      font-size:  12px;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
   }
   
   img {

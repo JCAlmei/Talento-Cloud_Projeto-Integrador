@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+  <!-- Link do arquivo CSS -->
+  <link rel="stylesheet" href="/produto/produto.css">
+  <!-- Link do arquivo JS -->
+  <script src="/produto/produto.js"></script>
+  <!-- Título da página -->
+  <title>Produto</title>
+</head>
+
+<body>
+
+  <header>
+    <a href="/index.html">
+    <img id="logo" src="/img/Group 2 1LOGO.svg" alt="BookFlix">
+    </a>
+    <nav id="nav-header">
+
+      <ul id="ul-header">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="categorias.html">Categorias</a>
+        </li>
+        <li>
+          <a href="">Minha Estante</a>
+        </li>
+        <li>
+          <a href="fale_conosco.html">Fale Conosco</a>
+        </li>
+        <li>
+          <a href="">Quem Somos</a>
+        </li>
+      </ul>
+
+      <nav>
+        <form action="">
+          <input type="search" name="q" placeholder="Pesquisar...">
+          <input type="submit" value="Buscar" >
+        </form>
+      </nav>
+
+      <div class="dropdown">
+        <img id="imgMenu" src="/img/Menu (branco).png" alt="Cinque Terre">
+      <!-- <div class="dropdown">
+        <button class="dropbtn">Menu</button> -->
+        <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="#">Minha Estante</a>
+        <a href="fale_conosco.html">Fale Conosco</a>
+        <a href="#">Quem Somos</a>
+        </div>
+      </div>
+
+    </nav>
+
+  </header>
+
+    <main id="grid">
+
+      
+
+      <div id="conteudo">
+
+        <img src="/produto/img/livro-mares-sombrias-philippa-gregory-em-epub-pdf-mobi-ou-ler-online_large-1.svg" alt="Imagem Grande" id="img-p" >
+
+        <div class="thumbnails">
+          <img class="thumbnail" src="/produto/img/capa-frente_pequena.svg" alt="Imagem Pequena 1" id="img-1" onclick="mudarImagem1('img-p')">
+
+          <img class="thumbnail" src="/produto/img/livro-mares-sombrias-philippa-gregory-em-epub-pdf-mobi-ou-ler-online_contra-capa.svg" alt="Imagem Pequena 1" 
+          id="img-2" onclick="mudarImagem2('img-p')">
+
+          <img src="/produto/img/livro-real.svg" 
+          id="img-3" onclick="mudarImagem3('img-p')">
+          
+        </div>
+      </div>
+
+      <div id="sinopse">
+        <div id="titulo">
+          <h2>Amigos, Amores e Aquela Coisa Terrível</h2>
+        </div>
+        <div id="estrela">
+            <a href="javascript:void(0)" onclick="Avaliar(1)">
+            <img src="/index/img/star0.png" id="s1" width="12" height="12"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar(2)">
+            <img src="/index/img/star0.png" id="s2" width="12" height="12"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar(3)">
+            <img src="/index/img/star0.png" id="s3" width="12" height="12"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar(4)">
+            <img src="/index/img/star0.png" id="s4" width="12" height="12"></a>
+            
+            <a href="javascript:void(0)" onclick="Avaliar(5)">
+            <img src="/index/img/star0.png" id="s5" width="12" height="12"></a>
+            <p id="p-estrela">( 0 ) Avaliações</p>
+        </div>
+        <div id="texto">
+          <h3>Sinopse</h3>
+          <div id="txt">
+          Amor, riqueza e ambição entram em conflito no período da restauração da monarquia inglesa em    Maréssombrias, de Philippa Gregory, autora de grandes sucessos como A irmã de Ana Bolena e A  rainha  branca. É véspera do solstício de verão de 1670. Dois visitantes inesperados chegam a um   armazém na  margem direita do Tâmisa. O primeiro é um homem rico que espera encontrar a mulher que  abandonou   vinte e um anos antes. James Avery recuperou tudo que havia perdido: a fortuna, o  título e a boa  vontade do recém-restaurado rei Carlos II. Mas acredita que a proprietária do  armazém, a pobre Alinor  Reekie, tem a única coisa que seu dinheiro não compra: seu filho, seu   herdeiro. A segunda visitante é  uma belíssima viúva de Veneza em luto fechado. Lady da Ricci chega   a Londres depois de mandar uma  carta para o Embarcadouro Reekie com a terrível notícia da morte de   seu marido Rob, filho de Alinor,   afogado nas marés sombrias de Veneza. E traz junto um bebê, que  alega ser filho de Rob. Enquanto  isso, o irmão de Alinor, Ned, é balseiro no vilarejo de Hadley,  na distante Nova Inglaterra.
+          </div>
+          <div>
+            <h3><span class="span1">Detalhes do produto</span></h3>
+            <p><span class="span1"><strong class="span1">Editora:</strong> Record; 1ª edição (24 julho 2023)</span></p>
+            <p><span class="span1"><strong class="span1">Idioma:</strong> Português</span></p>
+            <p><span class="span1"><strong class="span1">Capa:</strong> Comum</span></p>
+            <p><span class="span1"><strong class="span1">N° de páginas:</strong> 560</span></p>
+            <p><span class="span1"><strong class="span1">Dimensões:</strong> 15.5 x 2.6 x 22.5 cm</span></p>
+            <p><span class="span1"><strong class="span1">Onde comprar:</strong> Amazon Americanas Submarino</span></p>
+          </div>
+          <div id="nav-vert">
+            <ul id="nv-ul">
+              <li class="nv-li"><a class="a-li" href=""><img src="/produto/img/btn_ler-online.svg" alt="Ler Online"></a></li>
+              <li class="nv-li"><a class="a-li" href=""><img src="/produto/img/btn_baixar-mobi.svg" alt="Baixar Mobi"></a></li>
+              <li class="nv-li"><a class="a-li" href=""><img src="/produto/img/btn_baixar-pdf.svg" alt="Baixar PDF"></a></li>
+              <li class="nv-li"><a class="a-li" href=""><img src="/produto/img/btn_baixar-epub.svg" alt="Baixar E-pub"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <section>
+
+      <h3>Produtos similares</h3>
+      
+      <div id="prod-sim">
+        <div class="pd-livros">
+          <div id="img1">
+          <img id="livro1" src="/produto/img/livro-sardas.svg" alt="Livro Sardas" width="130" height="180">
+          </div>
+          <div id="sp1">
+            <div>
+              <a href="javascript:void(0)" onclick="Avaliar(1)">
+              <img src="/index/img/star0.png" id="s1" width="12" height="12"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(2)">
+              <img src="/index/img/star0.png" id="s2" width="12" height="12"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(3)">
+              <img src="/index/img/star0.png" id="s3" width="12" height="12"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(4)">
+              <img src="/index/img/star0.png" id="s4" width="12" height="12"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(5)">
+              <img src="/index/img/star0.png" id="s5" width="12" height="12"></a>
+            </div>
+            <p id="pT">Sardas</p>
+            <p id="pA"><span class="span1">Cecelia Ahern</span></p>
+            <!-- <p id="rating">0</p> -->
+          </div>
+        </div>
+
+        <div class="pd-livros">
+          <div id="img1">
+          <img id="livro1" src="/produto/img/livro_eu-te-vejo.svg" alt="Eu te vejo" width="130" height="180">
+          </div>
+          <div id="sp1">
+            <div>
+              <a href="javascript:void(0)" onclick="Avaliar(1)">
+              <img src="/index/img/star0.png" id="s1" width="12" height="12"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar(2)">
+              <img src="/index/img/star0.png" id="s2" width="12" height="12"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar(3)">
+              <img src="/index/img/star0.png" id="s3" width="12" height="12"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar(4)">
+              <img src="/index/img/star0.png" id="s4" width="12" height="12"></a>
+                
+              <a href="javascript:void(0)" onclick="Avaliar(5)">
+              <img src="/index/img/star0.png" id="s5" width="12" height="12"></a>
+            </div>    
+            <p id="pT">Eu te vejo</p>
+            <p id="pA"><span class="span1">Trilogia Dei Sensi Vol: 1</span></p>
+            <!-- <p id="rating">0</p> -->
+          </div>
+        </div>
+        
+        <div class="pd-livros">
+          <div id="img1">
+          <img id="livro1" src="/produto/img/livro_explicacao-dos-passaros.svg" alt="Explicação dos pássaros" width="130" height="180">
+          </div>
+          <div id="sp1">
+            <div>
+              <a href="javascript:void(0)" onclick="Avaliar(1)">
+              <img src="/index/img/star0.png" id="s1" width="12" height="12"></a>
+                  
+              <a href="javascript:void(0)" onclick="Avaliar(2)">
+              <img src="/index/img/star0.png" id="s2" width="12" height="12"></a>
+                  
+              <a href="javascript:void(0)" onclick="Avaliar(3)">
+              <img src="/index/img/star0.png" id="s3" width="12" height="12"></a>
+                  
+              <a href="javascript:void(0)" onclick="Avaliar(4)">
+              <img src="/index/img/star0.png" id="s4" width="12" height="12"></a>
+                  
+              <a href="javascript:void(0)" onclick="Avaliar(5)">
+              <img src="/index/img/star0.png" id="s5" width="12" height="12"></a>
+            </div>
+            <p id="pT">Explicação dos pássaros</p>
+            <p id="pA"><span class="span1">António Lobo Antunes</span></p>
+            <!-- <p id="rating">0</p> -->
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <footer>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam omnis velit eveniet perferendis facere ullam. Eum eveniet temporibus fuga quam blanditiis quos modi dolor possimus, corrupti, perferendis autem fugiat!
+      </p>
+    </footer>
+
+</body>
+</html>

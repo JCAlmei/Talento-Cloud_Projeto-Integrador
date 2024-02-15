@@ -19,36 +19,35 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  /* padding: 8px; */
-  margin-bottom: 12px;
+  margin: 30px;
   background-color: #000;
-  margin-bottom:0%;
+}
+
+#logo {
+  width: 200px;
+  height: 100px;
 }
 
 /** RESPONSIVIDADE DO HEADER **/
 
 @media (max-width: 860px) {
   header {
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
+    margin:0px
+  }
+
+  #logo {
+    margin-bottom: 30px;
   }
 }
 
 /*********************************/
 
-/** RESPONSIVIDADE DO LOGO **/
-
-@media (max-width: 860px) {
-  #logo {
-    margin-bottom: 30px;
-  }
-}
- 
-/**********************************/
-
 /****** NAV UL LI A ******/
 
 nav {
-  /* Podemos usar as propriedades abaixo para alinhas todos os elementos filhos do elemento 'nav' no centro do eixo */
   display: flex;
   align-items: center;
   font-size: small;
@@ -65,7 +64,6 @@ nav {
 ul {
   display: flex;
   margin-right: 30px;
-  /* Podemos aplicar as duas propriedades abaixo para alinhas os elementos 'li' no centro do eixo */
   height: 100%;
   align-items: center;
 }
@@ -77,7 +75,7 @@ ul {
 }
 
 nav ul li  {
-  list-style-type: none; /* Pontos que são criados, por padrão em listas */
+  list-style-type: none;
   margin-left: 16px;
 }
 
@@ -157,7 +155,7 @@ form {
   background-color: #8d8d8d;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 4;
 }
 
 .dropdown-content a {
@@ -182,6 +180,12 @@ form {
   }
 }
 
+@media (max-width: 859px) {
+  .dropdown {
+    margin-left: 20px;
+  }
+}
+
 /*********************************/
 
 /****** BOTÕES DE CADASTRO E LOGIN ******/
@@ -194,9 +198,9 @@ form {
   text-align: center;
   text-decoration: none;
   display: flex;
-  font-size: 10px;
+  font-size: 16px;
   cursor: pointer;
-  
+  border-radius: 5px;
 }
 
 .btn-1:hover {
@@ -211,9 +215,10 @@ form {
   text-align: center;
   text-decoration: none;
   display: flex;
-  font-size: 10px;
+  font-size: 16px;
   cursor: pointer;
   margin-left: 5px;
+  border-radius: 5px;
 }
 
 .btn-2:hover {
@@ -226,13 +231,11 @@ form {
   .btn-1 {
     display: none;
   }
-} 
 
-@media (max-width: 970px) {
   .btn-2 {
     display: none;
   }
-}
+} 
 
 /*********************************/
 
@@ -240,7 +243,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 @media (max-width: 768px) {
@@ -258,18 +261,14 @@ main {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* width: 100px; */
-  /* background-color: #000000; */
   display: flex;
   flex-direction: column;
-  /* max-height:600px; */
 }
   
 .l2 .a3 {
   display: flex;
   color: #ffffff;
   padding:5px 30px;
-  /* text-decoration: none; */
 }
   
 #active {
@@ -298,8 +297,6 @@ main {
   background-color: #ff0000;
   color: white;
   padding: 5px 30px 10px;
-  /* margin-left: 90px; */
-  /* margin-bottom: 20px; */
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -307,9 +304,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
   border-radius: 5px;
-  /* margin-top: 10px; */
 }
 
 .dropdown2 {
@@ -321,7 +316,6 @@ main {
   display: none;
   position: absolute;
   background-color: #828282;
-  /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 4;
 }
@@ -330,7 +324,9 @@ main {
   color: rgb(253, 253, 253);
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dropdown-content2 a:hover {background-color: #a0a0a0}
@@ -345,11 +341,15 @@ main {
 
 /** RESPONSIVIDADE DO MENU RESPONSIVO **/
 
-/* @media (min-width: 769px) {
-  .dropdown2 {
-    display: none;
+@media (max-width: 769px) {
+  .dropdown-content2 {
+    width: 336px;
   }
-} */
+
+  .dropbtn2 {
+    width: 336px;
+  }
+}
 
 /*************************************/
 
@@ -359,9 +359,6 @@ main {
 #grid {
   display: grid;
   grid-template-columns: auto auto;
-  /* background-color: #ffffff; */
-  
-  /* padding: 10px; */
 }
 
 #div0 {
@@ -451,32 +448,12 @@ p {
   top: 0;
 }
 
-/* .dv {
-  border-radius: 5px;
-} */
-
-/** RESPONSIVIDADE DO CONTEÚDO DE CATEGORIA **/
-
-/* @media (max-width: 769px) {
-  #div0 {
-    display:none;
-  }
-} */
-
 @media (max-width: 860px) {
-  /* #div0 {
-    display:none;
-  } */
 
   #grid {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: flex-start; */
-    /* left: 0%; */
-    /* width: 100%; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-content: center; */
   }
 
   #div1{
